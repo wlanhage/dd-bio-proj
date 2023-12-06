@@ -1,5 +1,358 @@
+:root {
+  --white: #f6f8ff;
+  --black: #2d2d2d;
+  --red: #d24e42;
+  --darkred: #b10f00;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  width: 1280px;
+  background-color: var(--black);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* .wrapper {
+  padding: 0px 173px;
+} */
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: var(--maroon);
+  text-decoration: none;
+}
+
+.btn-sections {
+  border: none;
+  outline: none;
+  background-color: unset;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600; /* Semi-bold */
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bolder;
+  color: var(--white);
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400; /* Regular */
+  color: var(--white);
+}
+
+section {
+  margin: 48px 172px;
+}
+/* -------------------------------------- */
+/* Hero ----------------------------------*/
+
+.hero {
+  align-items: flex-start;
+  background-image: url("images/example.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+/* header {
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--lightgray);
+  height: 925px;
+  background-image: url("images/m-watchonstone.jpg");
+  background-repeat: no-repeat;
+  background-position: 70% 50%;
+} */
+
+.card-button-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 48px;
+}
+
+.card {
+  padding: 24px 34px;
+  /* position: absolute;
+  top: 68%; */
+  background-color: rgba(229, 229, 229, 0.1);
+  width: 480px;
+  margin: 30px 54px 30px 54px;
+}
+
+.hero .card p {
+  margin: 8px 0 24px 0;
+}
+
+.btn-hero {
+  /* align-self: center; */
+  /* position: relative;
+  top: 97%; */
+  align-self: end;
+  padding: 14px;
+  background-color: unset;
+  border: 1px solid var(--white);
+  font-size: 24px;
+  border-radius: 4px;
+  color: var(--white);
+}
+
+/* -------------------------------------- */
+/* Flexbox ------------------------------ */
+
+.flex {
+  display: flex;
+}
+
+.flex.row {
+  flex-direction: row;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+/* -------------------------------------- */
+/* Sections ----------------------------- */
+
+.title {
+  justify-content: space-between;
+}
+
+.slide-show {
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.arrow img {
+  width: 36px;
+  top: 50%;
+  position: relative;
+  margin-left: 20px;
+}
+
+.arrow img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.arrow-more {
+  padding: 26px 0px;
+}
+
+.show-more-btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.show-more-btn {
+  gap: 12px;
+}
+
+.show-more-btn p {
+  align-self: center;
+  color: var(--darkred);
+  width: -webkit-fill-available;
+}
+
+.slidecircle {
+  width: 114px;
+  align-self: center;
+  margin-top: 16px;
+}
+
+/*----------------------------*/
+/*ads-------------------------*/
+
+.ad img {
+  max-width: 934px;
+}
+
+/*Ad margin*/
+section.upcoming.flex > div.flex.column > img {
+  margin-bottom: 30px;
+}
+
+section.toplist.flex > div.flex.column > div.title.flex.row {
+  margin-top: 30px;
+}
+/*----------*/
+
+.ad-offer {
+  position: absolute;
+  padding: 0px 72px;
+  background-color: var(--red);
+  border-bottom-right-radius: 15px;
+}
+
+.ad-offer p {
+  font-weight: bolder;
+  font-size: 32px;
+}
+
+/*----------------------------*/
+/*Contact and info------------*/
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  margin-top: 48px;
+  justify-content: center;
+  gap: 23px;
+}
+
+.col-1,
+.col-2 {
+  border-right: 1px solid white;
+  padding-right: 23px;
+}
+
+.email-submit input {
+  width: 60%;
+  margin: unset;
+  border-style: unset;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 3px;
+}
+
+.email-submit button {
+  margin: unset;
+  background-color: var(--darkred);
+  border: unset;
+  padding: 4px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.email-submit button:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.email-submit button img {
+  display: flex;
+  width: 16px;
+}
+
+input::placeholder {
+  font-weight: lighter;
+  color: var(--darkred);
+}
+
+.email-submit input:focus {
+  outline: none;
+}
+
+.mobile-line {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    width: 100%;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  section {
+    margin: 48px 12px;
+  }
+
+  h2 {
+    margin-bottom: unset;
+  }
+
+  /*---------------------*/
+
+  .btn-hero {
+    align-self: center;
+  }
+
+  .card-button-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: unset;
+  }
+
+  /*---------------------*/
+
+  .arrow {
+    display: none;
+  }
+
+  .ad img {
+    max-width: 430px;
+    width: 100%;
+  }
+
+  .ad-offer {
+    padding: 0px 36px;
+  }
+
+  .ad-offer p {
+    font-weight: bolder;
+    font-size: 16px;
+  }
+
+  /*Ad margin*/
+  section.upcoming.flex > div.flex.column > img {
+    margin-bottom: unset;
+  }
+
+  section.toplist.flex > div.flex.column > div.title.flex.row {
+    margin-top: unset;
+  }
+  /*----------*/
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .col-1,
+  .col-2 {
+    border-right: unset;
+  }
+
+  .col-1 p,
+  .col-2 p {
+    margin: 5px 0px;
+  }
+
+  .slide-show img {
+    width: 100%;
+  }
+
+  .mobile-line {
+    display: block;
+    height: 1px;
+    background-color: var(--white);
+  }
 }
