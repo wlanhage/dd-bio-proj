@@ -15,19 +15,21 @@
   <div class="wrapper">
 
     <section class="hero flex column">
-      <video autoplay>
-        <source src="/mp4/pexels-cottonbro.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="card-button-container">
-        <div class="card">
-          <h3>Info about movie</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis
-            fuga nulla iusto cumque deleniti vitae dolores qui, laboriosam
-            modi, voluptas maxime velit nesciunt reiciendis amet libero. Vitae
-            soluta aperiam maiores.
-          </p>
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="/mp4/pexels-cottonbro.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="card-button-container">
+          <div class="card">
+            <h3>Info about movie</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis
+              fuga nulla iusto cumque deleniti vitae dolores qui, laboriosam
+              modi, voluptas maxime velit nesciunt reiciendis amet libero. Vitae
+              soluta aperiam maiores.
+            </p>
+          </div>
         </div>
         <button class="btn-hero">MORE</button>
       </div>

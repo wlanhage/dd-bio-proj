@@ -1,96 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600&display=swap");
 
 * {
-    margin: 0;
-    padding:0%;
+  margin: 0;
+  padding: 0%;
 }
 
 header {
-    height: 58px;
-    background-color: #b10f00;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
+  height: 58px;
+  background-color: #b10f00;
+  /* width: 100vw; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header h1{
-    font-size: 18px;
-    font-family: karla;
-    color: black;
+header h1 {
+  font-size: 18px;
+  font-family: karla;
+  color: black;
 }
 
 .leftNav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-    gap: 40px;
+  gap: 40px;
 
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
-.hamburgerMenu img{
-    width: 25px;
-    height: 25px;
-    
-    position: relative;
-    top: 3px;
+.hamburgerMenu img {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 3px;
 }
 
 .logotype img {
-    width: 38px;
-    height: 38px;
-    
+  width: 38px;
+  height: 38px;
 }
 
-
-
-
-
 .rightNav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-    gap: 70px;
+  gap: 70px;
 
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 .citySelector {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-    gap: 10px;
+  gap: 10px;
 }
 
+.cityArrow img {
+  width: 30px;
+  height: 30px;
 
-.cityArrow img{
-    width: 30px;
-    height: 30px;
-
-    position: relative;
-    top: 2px;
-    
+  position: relative;
+  top: 2px;
 }
 
 .login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.loginIcon img {
+  width: 22px;
+  height: 22px;
+
+  position: relative;
+  top: 1px;
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    width: 100%;
+    gap: 22px;
+  }
+
+  .leftNav {
+    gap: 2px;
+    margin-left: 8px;
+  }
+
+  .hamburgerMenu img {
+    top: 3px;
+  }
+
+  .citySelector {
     display: flex;
     flex-direction: row;
     align-items: center;
-
     gap: 10px;
-}
+  }
 
-.loginIcon img{
-    width: 22px;
-    height: 22px;
-    
-    position: relative;
-    top: 1px;
-}
+  .rightNav {
+    gap: 12px;
+    margin-right: 8px;
+  }
 
+  .logotype {
+    display: none;
+  }
+}

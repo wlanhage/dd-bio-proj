@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600&display=swap");
+
 :root {
   --white: #f6f8ff;
   --black: #2d2d2d;
@@ -12,25 +14,12 @@
 body {
   /* width: 1280px; */
   background-color: var(--black);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: karla;
 }
 
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
-}
-
-video {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
 }
 
 a:link,
@@ -84,37 +73,40 @@ section {
 /* Hero ----------------------------------*/
 
 .hero {
-  align-items: flex-start;
-  background-image: url("images/example.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  min-height: 100vh;
-  justify-content: space-between;
+  height: 100vh;
+  justify-content: end;
 }
 
-/* header {
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--lightgray);
-  height: 925px;
-  background-image: url("images/m-watchonstone.jpg");
-  background-repeat: no-repeat;
-  background-position: 70% 50%;
-} */
+video {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
 .card-button-container {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 48px;
+  position: absolute;
+  top: 74%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 1;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-button-container:hover {
+  background-color: var(--black);
 }
 
 .card {
-  padding: 24px 34px;
-  /* position: absolute;
-  top: 68%; */
-  background-color: rgba(229, 229, 229, 0.1);
-  width: 480px;
-  margin: 30px 54px 30px 54px;
+  width: 400px;
 }
 
 .hero .card p {
@@ -122,16 +114,22 @@ section {
 }
 
 .btn-hero {
-  /* align-self: center; */
-  /* position: relative;
-  top: 97%; */
-  align-self: end;
   padding: 14px;
   background-color: unset;
   border: 1px solid var(--white);
   font-size: 24px;
   border-radius: 4px;
   color: var(--white);
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 0%;
+  right: 46%;
+}
+
+.btn-hero:hover {
+  background-color: var(--white);
+  color: var(--black);
+  cursor: pointer;
 }
 
 /* -------------------------------------- */
@@ -298,6 +296,10 @@ input::placeholder {
     width: 100%;
   }
 
+  .wrapper {
+    width: 100%;
+  }
+
   .desktop {
     display: none;
   }
@@ -312,16 +314,41 @@ input::placeholder {
 
   /*---------------------*/
 
+  .hero {
+    justify-content: end;
+    align-items: center;
+    height: 85vh;
+  }
+
   .btn-hero {
+    margin-bottom: 10px;
+    position: unset;
     align-self: center;
+    margin-top: 3vw;
   }
 
   .card-button-container {
-    flex-direction: column;
+    position: unset;
+    transform: unset;
   }
 
   .card {
     width: unset;
+  }
+
+  .video-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  video {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
   /*---------------------*/
