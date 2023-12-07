@@ -19,6 +19,7 @@ footer h1 {
 
 footer p {
     font-size: 20px;
+    color: white;
 
 }
 
@@ -50,16 +51,31 @@ footer p {
 .emailInput {
     display: flex;
     flex-direction: row;
+
+    
+    
+    color: #B10f00;
+}
+
+.emailInput input {
+    border-style: unset;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .placeholderButton {
     background-color: #B10f00;
     color: #B10f00;
+
+    border: unset;
+  padding: 4px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .placeholderButton img{
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
 }
 
 
