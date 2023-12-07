@@ -14,6 +14,11 @@
     require __DIR__ . '/header/header.html';
 ?>
 
+<div class="curtain-container">
+    <div class="curtain left-curtain"></div>
+    <div class="curtain right-curtain"></div>
+</div>
+
 <div class="heroContainer">
     <div class="heroOpacity">
         <div class="heroInfo">
