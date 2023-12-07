@@ -48,6 +48,7 @@ h2 {
   font-size: 24px;
   font-weight: bolder;
   color: var(--white);
+  align-self: center;
 }
 
 h3 {
@@ -151,7 +152,7 @@ video {
 /* Sections ----------------------------- */
 
 .movie-container img {
-  width: 100%;
+  width: 209px;
 }
 
 .title {
@@ -357,8 +358,11 @@ input::placeholder {
     display: none;
   }
 
+  .ad {
+    margin: 0px 12px;
+  }
+
   .ad img {
-    max-width: 430px;
     width: 100%;
   }
 
