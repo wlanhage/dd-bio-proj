@@ -27,6 +27,8 @@ body {
     background-image: url(content/bilder/film_liggandes.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
     
 }
 
@@ -155,7 +157,7 @@ body {
 .lowerInfo {
     margin-top: 40px;
 
-    width: 57vw;
+    width: 42vw;
 }
 
 .actorList {
@@ -284,4 +286,49 @@ body {
     scale: 1.2;
     transition: 0.2s;
     
+}
+
+
+/* CURTAINS */ 
+
+.curtain-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Above other content */
+    overflow: hidden;
+}
+
+.curtain {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-size: cover;
+    box-shadow: inset 0 0 30px rgba(0,0,0,0.6); /* Adds depth */
+    transform-origin: top center;
+}
+
+.left-curtain {
+    left: 0;
+    background-image: url('content/bilder/moviecurt.avif'); 
+    animation: slideLeft 3s forwards;
+}
+
+.right-curtain {
+    right: 0;
+    background-image: url('content/bilder/moviecurt.avif'); /* Replace with your right curtain image path */
+    animation: slideRight 3s forwards;
+}
+
+@keyframes slideLeft {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+@keyframes slideRight {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
 }
