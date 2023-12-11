@@ -1,10 +1,16 @@
-document.addEventListener('DOMContentLoaded', function(){
-    document.getElementById('heroBokaButton').addEventListener('click', function(){
-        document.getElementById('visningarContainer').scrollIntoView({
-            behavior: "smooth"
-        });
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the button and the target div
+    var scrollButton = document.getElementById('heroBokaButton');
+    var targetDiv = document.querySelector('.visningarContainer'); // Use querySelector for class
+  
+    // Add click event listener to the button
+    scrollButton.addEventListener('click', function() {
+      // Use smooth scroll behavior
+      targetDiv.scrollIntoView({ behavior: 'smooth' });
+    });
 });
-});
+
+  
 
 
 

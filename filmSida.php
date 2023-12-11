@@ -48,7 +48,9 @@
 
         </div>
         <div class="trailerPlayer">
-            <img src="content/bilder/film_liggandes.png" alt="movie trailer">
+            <img class="play" src="content/playBtn.png" alt="play">
+            <img class="video" src="content/bilder/film_liggandes.png" alt="pic">
+            
         </div>
 
     </div>
@@ -150,6 +152,15 @@
 
 
 </div>
+
+<div class="relatedMovies"><h3>Liknande filmer:</h3></div>
+
+<div class="slide-show">
+          <div class="movie-container"><img src="/ai_movie_posters/DALL·E 2023-12-07 11.42.05 - A clever and satirical movie poster about a finance guy scamming rich people. The poster should feature a charismatic and slick-looking finance profes.png" alt="placeholder"></div>
+          <div class="movie-container"><img src="/ai_movie_posters/DALL·E 2023-12-07 11.43.19 - A high-energy action movie poster in a vertical format, showcasing a daring heroine in the midst of an explosive action scene. The heroine should be d.png" alt="placeholder"></div>
+          <div class="movie-container desktop"><img src="/ai_movie_posters/DALL·E 2023-12-07 11.43.23 - A dynamic action movie poster, designed to fill the entire vertical frame without any black bars. The poster should feature a powerful hero in an acti.png" alt="placeholder"></div>
+          <div class="movie-container desktop"><img src="/ai_movie_posters/DALL·E 2023-12-07 11.37.50 - A creative movie poster featuring a split design, with one half depicting one man and the other half depicting another person. Each half should reflec.png" alt="placeholder"></div>
+        </div>
 
 
 

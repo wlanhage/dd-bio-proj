@@ -8,7 +8,7 @@
 header {
   height: 58px;
   background-color: #b10f00;
-  /* width: 100vw; */
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -85,15 +85,15 @@ header h1 {
   top: 1px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 700px) {
   header {
     width: 100%;
     gap: 22px;
   }
 
   .leftNav {
-    gap: 2px;
-    margin-left: 8px;
+    gap: 10px;
+    margin-left: 12px;
   }
 
   .hamburgerMenu img {
