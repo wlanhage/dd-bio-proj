@@ -37,9 +37,21 @@ document.addEventListener("scroll", (e) => {
     if (scrollpos > 815) {
         const shortcut = document.querySelector(".shortcut");
         shortcut.style.display = "flex";
+
+        const chattBox = document.querySelector(".chattBox");
+        chattBox.style.display = "flex";
+
+        if (scrollpos > 2450) {
+            const chattBox = document.querySelector(".chattBox");
+            chattBox.style.display = "none";
+        }
+
     } else {
         const shortcut = document.querySelector(".shortcut");
         shortcut.style.display = "none"; 
+
+        const chattBox = document.querySelector(".chattBox");
+        chattBox.style.display = "none";
     }
 });
 
