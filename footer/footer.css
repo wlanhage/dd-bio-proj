@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600&display=swap");
 
+:root {
+  --white: #f6f8ff;
+  --black: #2d2d2d;
+  --red: #d24e42;
+  --darkred: #b10f00;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +14,7 @@
 }
 
 footer {
-  background-color: #404040;
+  background-color: var(--black);
   width: 100%;
   color: black;
   font-family: karla;
@@ -21,7 +28,7 @@ footer h1 {
 
 footer p {
   font-size: 20px;
-  color: white;
+  color: var(--white);
 }
 
 .upperFooter {
@@ -42,14 +49,14 @@ footer p {
 .dividerLine {
   width: 0.5px;
   height: 120px;
-  background-color: white;
+  background-color: var(--white);
 }
 
 .emailInput {
   display: flex;
   flex-direction: row;
 
-  color: #b10f00;
+  color: var(--darkred);
 }
 
 .emailInput input {
@@ -59,8 +66,8 @@ footer p {
 }
 
 .placeholderButton {
-  background-color: #b10f00;
-  color: #b10f00;
+  background-color: var(--darkred);
+  color: var(--darkred);
 
   border: unset;
   padding: 4px;
@@ -74,7 +81,7 @@ footer p {
 }
 
 .bottomFooter {
-  background-color: #b10f00;
+  background-color: var(--darkred);
   color: #000000;
 
   height: 80px;
@@ -130,11 +137,9 @@ footer p {
 
   .mobileLine {
     display: block;
-    width: 80vw;
     height: 0.5px;
-    background-color: white;
-
-    margin-top: 100px;
+    background-color: var(--white);
+    margin: 100px 22px 0px 22px;
   }
 
   .copywright h1 {

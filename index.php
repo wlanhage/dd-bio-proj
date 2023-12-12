@@ -13,7 +13,7 @@
 
 <body>
   <div class="wrapper">
-
+    
     <section class="hero flex column">
       <div class="video-container">
         <video autoplay muted loop>
@@ -31,7 +31,7 @@
             </p>
           </div>
         </div>
-        <button class="btn-hero">MORE</button>
+        <button onclick="hideHero()" class="btn-hero">MORE</button>
       </div>
     </section>
     <section class="in-cinema flex">
@@ -44,7 +44,7 @@
           </div>
         </div>
         <div class="slide-show flex row">
-          <div class="movie-container"><img src="/ai_movie_posters/DALL·E 2023-12-07 11.37.50 - A creative movie poster featuring a split design, with one half depicting one man and the other half depicting another person. Each half should reflec.png" alt="placeholder"></div>
+          <div class="movie-container"><a href="/filmSida.php"><img src="/content/bilder/film_standing.png" alt="placeholder"></a></div>
           <div class="movie-container"><img src="/ai_movie_posters/DALL·E 2023-12-07 11.28.20 - A dramatic action movie poster, featuring a full-body portrait of a hero in a dynamic pose, holding a blazing gun in one hand and a shield in the othe.png" alt="placeholder"></div>
           <div class="movie-container desktop"><img src="/ai_movie_posters/DALL·E 2023-12-07 11.28.53 - A spine-chilling horror movie poster, featuring a full-body portrait of a menacing figure shrouded in shadows, standing in a haunting, fog-filled grav.png" alt="placeholder"></div>
           <div class="movie-container desktop"><img src="/ai_movie_posters/DALL·E 2023-12-07 11.29.39 - A heartfelt humanistic movie poster, featuring a full-body portrait of a diverse group of people standing together in unity, against a backdrop of a v.png" alt="placeholder"></div>
@@ -101,6 +101,7 @@
   <footer>
     <?php require_once __DIR__ . '/footer/footer.html' ?>
   </footer>
+  <script src="/script.js"></script>
 </body>
 
 </html>
