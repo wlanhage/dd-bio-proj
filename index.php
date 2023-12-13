@@ -73,7 +73,8 @@
       <div class="arrow"><img src="images/arrow.svg" alt="arrow" /></div>
     </section>
     <div class="ad flex">
-      <img src="images/adimg.png" alt="ad popcorn" />
+      <img class="desktop" src="images/adimg.png" alt="ad popcorn" />
+      <img class="mobile" src="images/adimg-mobile1.png" alt="ad popcorn" />
       <div class="ad-offer">
         <p>50% OFF</p>
       </div>

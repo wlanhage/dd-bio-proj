@@ -30,6 +30,7 @@ body {
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 23px;
 }
 
 
@@ -309,6 +310,10 @@ input::placeholder {
   display: none;
 }
 
+.mobile {
+  display: none;
+}
+
 @media screen and (max-width: 450px) {
   body {
     width: 100%;
@@ -316,6 +321,7 @@ input::placeholder {
 
   .wrapper {
     width: 100%;
+    padding: unset;
   }
 
   .desktop {
@@ -389,15 +395,19 @@ input::placeholder {
   }
 
   .ad-offer {
-    padding: 0px 36px;
+    padding: 3px 10px;
   }
 
   .ad-offer p {
     font-weight: bolder;
-    font-size: 16px;
+    font-size: 24px;
   }
 
   /*Ad margin*/
+  .mobile {
+    display: block;
+  }
+
   section.upcoming.flex > div.flex.column > img {
     margin-bottom: unset;
   }
