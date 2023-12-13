@@ -63,6 +63,8 @@ footer p {
   border-style: unset;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
+  padding: 5px;
+  width: 145px;
 }
 
 .placeholderButton {
@@ -70,7 +72,7 @@ footer p {
   color: var(--darkred);
 
   border: unset;
-  padding: 4px;
+  padding: 4px 3px 1px 4px;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -78,6 +80,9 @@ footer p {
 .placeholderButton img {
   width: 16px;
   height: 16px;
+  transform: rotate(-90deg);
+  filter: invert(99%) sepia(30%) saturate(4996%) hue-rotate(180deg)
+    brightness(111%) contrast(104%);
 }
 
 .bottomFooter {
