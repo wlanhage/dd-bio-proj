@@ -28,12 +28,14 @@ body {
 }
 
 .wrapper {
-  max-width: 1280px;
+  /* max-width: 1386px; */
   margin: 0 auto;
-  padding: 23px;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-
 
 a:link,
 a:visited,
@@ -77,11 +79,11 @@ p {
 }
 
 section {
-  /* margin: 48px 172px; */
-  margin-left: 172px;
-  margin-right: calc(172px - 56px);
+  margin-left: 11vw;
+  margin-right: calc(11vw - 56px);
   margin-top: 48px;
   margin-bottom: 48px;
+  width: auto;
 }
 /* -------------------------------------- */
 /* Hero ----------------------------------*/
@@ -165,7 +167,8 @@ video {
 /* Sections ----------------------------- */
 
 .movie-container img {
-  width: 209px;
+  max-width: 209px;
+  width: 100%;
 }
 
 .movie-container img:hover {
@@ -178,13 +181,15 @@ video {
 }
 
 .slide-show {
-  justify-content: space-between;
   gap: 18px;
+}
+
+.arrow {
+  align-self: center;
 }
 
 .arrow img {
   width: 36px;
-  top: 50%;
   position: relative;
   margin-left: 20px;
 }
@@ -223,21 +228,17 @@ video {
 /*ads-------------------------*/
 
 .ad {
-  margin: 48px 172px;
+  /* margin: 48px 172px; */
+  max-width: 890px;
+  width: 78vw;
+  margin: 44px 0px;
 }
 
 .ad img {
-  max-width: 890px;
+  max-width: 100%;
 }
 
-/*Ad margin*/
-section.upcoming.flex > div.flex.column > img {
-  margin-bottom: 30px;
-}
 
-section.toplist.flex > div.flex.column > div.title.flex.row {
-  margin-top: 30px;
-}
 /*----------*/
 
 .ad-offer {
@@ -387,7 +388,7 @@ input::placeholder {
   }
 
   .ad {
-    margin: 64px 12px 0px 12px;
+    width: calc(100% - 24px);
   }
 
   .ad img {
@@ -408,13 +409,6 @@ input::placeholder {
     display: block;
   }
 
-  section.upcoming.flex > div.flex.column > img {
-    margin-bottom: unset;
-  }
-
-  section.toplist.flex > div.flex.column > div.title.flex.row {
-    margin-top: unset;
-  }
   /*----------*/
 
   .contact {
