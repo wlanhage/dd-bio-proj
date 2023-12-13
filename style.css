@@ -242,7 +242,7 @@ section.toplist.flex > div.flex.column > div.title.flex.row {
 
 .ad-offer {
   position: absolute;
-  padding: 0px 72px;
+  padding: 24px 72px;
   background-color: var(--red);
   border-bottom-right-radius: 15px;
 }
