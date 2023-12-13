@@ -51,7 +51,7 @@ document.addEventListener("scroll", (e) => {
         shortcut.style.display = "none"; 
 
         const chattBox = document.querySelector(".chattBox");
-        chattBox.style.display = "none";
+        chattBox.style.display = "flex";
     }
 });
 
