@@ -404,7 +404,7 @@ background-color: white;
         display: none;
     }
     .heroInfo {
-        margin-bottom: 100px;
+        
     }
 
     .upperInfo {
@@ -439,3 +439,31 @@ background-color: white;
         grid-template-columns: 1fr 1fr;
     }
   }
+
+
+
+@media screen and (max-width: 450px) {
+    .heroInfo {
+        flex-direction: column;
+        max-width: 430px;
+        justify-content: center;
+        margin-left: 50px;
+    }
+
+    .infoText h1 {
+        font-size: 25px;
+    }
+    .infoText h3 {
+        font-size: 20px;
+    }
+    .infoText p {
+        font-size: 14px;
+        max-width: 350px;
+    }
+    #heroBokaButton {
+        position: relative;
+        right: 340px;
+        top: 15px;
+    }
+
+}
